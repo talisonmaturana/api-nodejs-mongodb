@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var client = new Schema({
-    
+var client = Schema({
+    _id: mongoose.Schema.Types.ObjectId,
     name: {
         type: String,
         required: true,
